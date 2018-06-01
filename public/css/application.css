@@ -77,12 +77,8 @@ html {
 *, ::after, ::before {
     box-sizing: border-box;
 }
-/* p {
-} */
 .bmah_item {
   text-align: center;
-  border-style: double;
-  border-color: purple;
   background-color: lightblue;
 
 }
@@ -100,4 +96,8 @@ html {
 }
 * strong {
  color: green;
+}
+
+main {
+  background-color: lightyellow;
 }
