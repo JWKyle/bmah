@@ -1,5 +1,6 @@
 require_relative 'check'
+require 'sinatra'
 
-class Bmah_check
-
+get '/' do
+  "hello world"
 end
