@@ -9,18 +9,22 @@ class Check
       Check.parse
       auction_item_data = Check.item_price.each_slice(8).to_a
       item_counter = 0
+      all_current_items = []
       while item_counter < auction_item_data.length
-        puts "\nItem Name: #{Check.item_name(item_counter)}\n
-         Current Bid: #{auction_item_data[item_counter][1]}
-         Minimum Bid: #{auction_item_data[item_counter][2]}
-         Time Left: #{auction_item_data[item_counter][3]}
-         # of Bids: #{auction_item_data[item_counter][4]}
-         Realm Market Value: #{auction_item_data[item_counter][5]}
-         Global Market Value: #{auction_item_data[item_counter][6]}
-         Realm AH Current Quantity: #{auction_item_data[item_counter][7]}\n"
+        current_item_info = {
+        item_name: Check.item_name(item_counter),
+         current_bid: auction_item_data[item_counter][1],
+         minimum_bid: auction_item_data[item_counter][2],
+         time_left: auction_item_data[item_counter][3],
+         number_of_bids: auction_item_data[item_counter][4],
+         realm_market_value: auction_item_data[item_counter][5],
+         global_market_value: auction_item_data[item_counter][6],
+         realm_ah_current_quantity: auction_item_data[item_counter][7]
+        }
+        all_current_items << current_item_info
         item_counter += 1
       end
-      puts "\n\nThe current Wow Token price is: #{Token.current_price}"
+      all_current_items
     end
 
     def refresh
