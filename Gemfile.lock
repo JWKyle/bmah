@@ -27,16 +27,20 @@ GEM
       xpath (~> 3.0)
     concurrent-ruby (1.0.5)
     diff-lcs (1.3)
+    dotenv (2.4.0)
     factory_bot (4.10.0)
       activesupport (>= 3.0.0)
     faker (1.8.7)
       i18n (>= 0.7)
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    multi_xml (0.6.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     pg (1.0.0)
@@ -89,8 +93,10 @@ DEPENDENCIES
   activerecord (~> 4.2.0)
   activesupport (~> 4.2.0)
   capybara
+  dotenv
   factory_bot
   faker
+  httparty
   nokogiri
   pg
   rack-test
@@ -102,4 +108,4 @@ DEPENDENCIES
   sinatra-contrib
 
 BUNDLED WITH
-   1.16.0.pre.3
+   1.16.2
