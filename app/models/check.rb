@@ -28,9 +28,9 @@ class Check
     end
 
     def refresh
-      # @doc = Nokogiri::HTML(open("https://www.tradeskillmaster.com/black-market?realm=US-area-52"))
+      @doc = Nokogiri::HTML(open("https://www.tradeskillmaster.com/black-market?realm=US-area-52"))
       ##### Test file
-      @doc = File.open('./spec/TSM_bmah_sample.xml') { |f| Nokogiri::XML(f) }
+      # @doc = File.open('./spec/TSM_bmah_sample.xml') { |f| Nokogiri::XML(f) }
     end
 
     def parse
