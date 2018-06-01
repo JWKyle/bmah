@@ -1,7 +1,7 @@
 
 element.style {
 }
-@media (min-width: 576px)
+@media only screen and (min-width: 576px)
 .container {
     max-width: 540px;
 }
@@ -100,4 +100,19 @@ html {
 
 main {
   background-color: lightyellow;
+}
+
+.reload {
+  text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    padding-top: 12%;
 }
