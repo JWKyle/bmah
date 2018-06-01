@@ -1,18 +1,14 @@
-# Black Market Auction House Checker
-_WIP_
+# Black Market Auction House Checker App V1
 
 This is a tool to check what Black Market Auction House on Wow's Area-52 shard has to offer.  
 
-Currently, I've worked through Nokogiri for scraping, and am implementing my TDD strategy.  Once TDD has been brought up to speed, the next steps will be to refactor and stylize.  
-
-After the first Ruby iteration is operational, the next stages will involve turning the project into a CLI, then either building out (expanding to other shards) or building up (include other tools, like World Event timers, etc).
+This version of the tool was built to utilize Sinatra so I could build a slim Web App.  It's currently Deployed on Heroku(Link to come)
 
 _This is currently only configured to work with Area 52_
 
 Requirements:  
 Nokogiri  
-RSpec
-
-Testing Strategy
-Since this project initally undertaken to get re-aquainted with Nokogiri, the early code was tested directly through IRB.  However, as the project has outgrown the exploration phase, I'm incorperating RSpec for TDD.  
+RSpec  
+HTTParty  
+PG
 
