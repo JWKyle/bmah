@@ -6,7 +6,7 @@ require_relative 'token'
 class Check
   class << self
     def current_auction
-      Check.parse
+      Check.refresh
       auction_item_data = Check.item_price.each_slice(8).to_a
       item_counter = 0
       all_current_items = []
@@ -33,12 +33,8 @@ class Check
       # @doc = File.open('./spec/TSM_bmah_sample.xml') { |f| Nokogiri::XML(f) }
     end
 
-    def parse
-      Check.refresh
-
-      puts "\nAuction House: #{@doc.xpath('//title').text}\n
-      #{@doc.xpath('//div//p').children.first.text}\n
-      Number of Items: #{@doc.xpath('//table//tbody//td//a').length}"
+    def updated_at
+      @doc.xpath('//div//p').children.first.text
     end
 
     def item_price
