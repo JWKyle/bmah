@@ -2,5 +2,5 @@ require_relative 'check'
 require 'sinatra'
 
 get '/' do
-  "hello world"
+  Check.current_auction
 end
