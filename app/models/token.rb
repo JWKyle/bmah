@@ -1,4 +1,4 @@
-require 'dotenv/load'
+
 require 'httparty'
 # Pulls Wow Token price info
 class Token
