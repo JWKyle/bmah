@@ -2,6 +2,11 @@
   <h1 class="title">Area 52 Black Market Auction House Items</h1>
   <h2 class="section"> Current BMAH Auctions: </h2>
   <br>
+  <div class="section">
+    <p class= "lead">Number of items: <%= @auctions.length %></p>
+    <em class="lead"><%= @updated_at %></em>
+  </div>
+  <br>
   <br>
 <% @auctions.each do |item| %>
 <ul>
