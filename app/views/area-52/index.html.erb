@@ -1,0 +1,21 @@
+<h1>Area 52 Black MArket Auction House Items</h1>
+
+<p> Current BMAH Auctions:
+</p>
+<% @auctions.each do |item| %>
+<div class="bmah_item">
+  <ul>
+    <p>Name: <%= item[:item_name]%> </p>
+    <p>Current Bid: <%= item[:current_bid]%> </p>
+    <p>Minimum Bid: <%= item[:minimum_bid]%> </p>
+    <p>Time Left: <%= item[:time_left]%> </p>
+    <p>Number of Bids: <%= item[:number_of_bids]%> </p>
+    <p>Realm Market Value: <%= item[:realm_market_value]%> </p>
+    <p>Global Market Value: <%= item[:global_market_value]%> </p>
+    <p>Realm AH Current Quantity: <%= item[:realm_ah_current_quantity]%> </p>
+  </ul>
+</div>
+<% end %>
+<p> Current token value:
+<%= @token_price %>
+</p>

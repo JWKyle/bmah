@@ -2,7 +2,7 @@ require 'open-uri'
 require 'nokogiri'
 require_relative 'token'
 
-# Checks and prints current Black Market Auction Items and Data
+
 class Check
   class << self
     def current_auction
