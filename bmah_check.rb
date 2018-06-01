@@ -1,5 +1,6 @@
-require_relative 'check'
+require_relative 'app/models/check'
+require 'sinatra'
 
-class Bmah_check
+get '/' do
 
 end
