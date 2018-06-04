@@ -7,13 +7,13 @@ This version of the tool was built to utilize Sinatra so I could build a slim We
 _This is currently only configured to work with Area 52_
 
 Requirements:
+Ruby
+Sinatra
 Bundler
-Nokogiri  
-RSpec  
-HTTParty
+RSpec
 
 __Also__
-You'll need an API key from Blizzard.  Directions canb e found [here](https://dev.battle.net).
+You'll need an API key from Blizzard.  Directions can be found [here](https://dev.battle.net).
 
 ## Directions
 
