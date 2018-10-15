@@ -1,4 +1,5 @@
 # Black Market Auction House Checker App V1
+_This app is currently a WIP_
 
 This is a tool to check what Black Market Auction House on Wow's Area-52 shard has to offer.  
 
