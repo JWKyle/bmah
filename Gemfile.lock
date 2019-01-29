@@ -105,7 +105,6 @@ DEPENDENCIES
   httparty
   nokogiri (>= 1.8.5)
   pg
-  rack (>= 1.6.11)
   rack-test
   rake
   rspec (~> 3.0)
