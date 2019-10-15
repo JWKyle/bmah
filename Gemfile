@@ -16,7 +16,7 @@ gem 'shotgun', '~>0.9.1'
 
 gem 'nokogiri', '>= 1.8.5'
 gem 'httparty'
-gem "rack", ">= 1.6.11"
+
 
 group :test do
   gem 'shoulda-matchers'
